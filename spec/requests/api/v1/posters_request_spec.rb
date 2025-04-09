@@ -82,3 +82,70 @@ describe "Posters API", type: :request do
     expect(poster_response[:img_url]).to eq("./assets/regret.jpg")
   end
 end
+
+  it 'can create a new poster' do
+    poster_params = {
+                        name: "HOPELESSNESS",
+                        description: "Stay in your comfort zone; it's safer.",
+                        price: 112.00,
+                        year: 2020,
+                        vintage: true,
+                        img_url: "./assets/hopelessness.jpg"
+    }
+    headers = { "CONTENT_TYPE" => "application/json"}
+
+    post "/api/v1/posters", headers: headers, params: JSON.generate(poster: poster_params)
+    created_poster = Poster.last
+
+    expect(response).to be_successful
+    expect(created_poster.name).to eq(poster_params[:name])
+    expect(created_poster.description).to eq(poster_params[:description])
+    expect(created_poster.price).to eq(poster_params[:price])
+    expect(created_poster.year).to eq(poster_params[:year])
+    expect(created_poster.vintage).to eq(poster_params[:vintage])
+    expect(created_poster.img_url).to eq(poster_params[:img_url])
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  it 'can destroy a poster' do
+    poster = Poster.create(name: "HOPELESSNESS",
+    description: "Stay in your comfort zone; it's safer.",
+    price: 112.00,
+    year: 2020,
+    vintage: true,
+    img_url: "./assets/hopelessness.jpg")
+
+    expect(Poster.count).to eq(1)
+
+    delete "/api/v1/posters/#{poster.id}"
+
+    expect(response).to be_successful
+    expect(Poster.count).to eq(0)
+
+    expect{Poster.find(poster.id) }.to raise_error(ActiveRecord::RecordNotFound)
+  end
+end
+
