@@ -87,7 +87,6 @@ describe "Posters API", type: :request do
     expect(attributes[:vintage]).to eq(true)
     expect(attributes[:img_url]).to eq("./assets/regret.jpg")
   end
-end
 
   it 'can create a new poster' do
     poster_params = {
@@ -111,30 +110,6 @@ end
     expect(created_poster.vintage).to eq(poster_params[:vintage])
     expect(created_poster.img_url).to eq(poster_params[:img_url])
   end
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   it 'can destroy a poster' do
     poster = Poster.create(name: "HOPELESSNESS",
