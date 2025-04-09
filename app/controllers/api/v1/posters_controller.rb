@@ -3,6 +3,12 @@ class Api::V1::PostersController < ApplicationController
     if params[:name]
       posters = Poster.where("LOWER(name) LIKE?", "%#{params[:name]}%")
       render json: PosterSerializer.format_posters(posters)
+    elsif params[:max_price]
+      posters = Poster.where("price <= #{params[:max_price]}")
+      render json: PosterSerializer.format_posters(posters)
+    elsif params[:min_price]
+      posters = Poster.where("price >= #{params[:min_price]}")
+      render json: PosterSerializer.format_posters(posters)
     else
       posters = Poster.all
       render json: PosterSerializer.format_posters(posters)
