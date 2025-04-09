@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/api/v1/posters", to: "api/v1/posters#index"
+
+
+  delete "/api/v1/posters", to: "api/v1/posters#destroy"
 end
