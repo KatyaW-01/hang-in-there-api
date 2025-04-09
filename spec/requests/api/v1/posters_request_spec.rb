@@ -26,5 +26,36 @@ describe "Posters API", type: :request do
     get "/api/v1/posters"
 
     expect(response).to be_successful
+    
+    posters = JSON.parse(response.body, symbolize_names: true)
+
+    expect(posters).to have_key(:data)
+    expect(posters[:data]).to be_an(Array)
+    expect(posters[:data].count).to eq(3)
+
+    posters[:data].each do |poster|
+      expect(poster).to have_key(:id)
+      expect(poster[:id]).to be_an(Integer)
+      expect(poster).to have_key(:type)
+      expect(poster[:type]).to be_a(String)
+      expect(poster).to have_key(:attributes)
+      attributes = poster[:attributes]
+
+      expect(attributes).to have_key(:description)
+      expect(attributes[:description]).to be_a(String)
+
+      expect(attributes).to have_key(:price)
+      expect(attributes[:price]).to be_a(Float)
+
+      expect(attributes).to have_key(:year)
+      expect(attributes[:year]).to be_an(Integer)
+
+      expect(attributes).to have_key(:vintage)
+      expect(attributes[:vintage]).to be_in([true, false])
+
+      expect(attributes).to have_key(:img_url)
+      expect(attributes[:img_url]).to be_a(String)
+      
+    end
   end
 end
