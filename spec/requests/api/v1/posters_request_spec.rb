@@ -35,7 +35,7 @@ describe "Posters API", type: :request do
 
     posters[:data].each do |poster|
       expect(poster).to have_key(:id)
-      expect(poster[:id]).to be_an(Integer)
+      expect(poster[:id]).to be_an(String)
       expect(poster).to have_key(:type)
       expect(poster[:type]).to be_a(String)
       expect(poster).to have_key(:attributes)
@@ -58,6 +58,36 @@ describe "Posters API", type: :request do
       expect(attributes[:img_url]).to be_a(String) 
     end
   end
+
+  it "sends one poster" do
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url: "./assets/regret.jpg"
+    )
+  
+    get "/api/v1/posters/#{poster.id}"
+  
+    expect(response).to be_successful
+  
+    poster_response = JSON.parse(response.body, symbolize_names: true)
+  
+    data = poster_response[:data]
+    attributes = data[:attributes]
+  
+    expect(data[:id]).to eq(poster.id.to_s)
+    expect(data[:type]).to eq("poster")
+    expect(attributes[:name]).to eq("REGRET")
+    expect(attributes[:description]).to eq("Hard work rarely pays off.")
+    expect(attributes[:price]).to eq(89.00)
+    expect(attributes[:year]).to eq(2018)
+    expect(attributes[:vintage]).to eq(true)
+    expect(attributes[:img_url]).to eq("./assets/regret.jpg")
+  end
+end
 
   it 'can create a new poster' do
     poster_params = {
@@ -124,3 +154,4 @@ end
     expect{Poster.find(poster.id) }.to raise_error(ActiveRecord::RecordNotFound)
   end
 end
+
