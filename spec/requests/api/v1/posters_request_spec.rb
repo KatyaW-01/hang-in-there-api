@@ -39,6 +39,7 @@ describe "Posters API", type: :request do
       expect(poster).to have_key(:type)
       expect(poster[:type]).to be_a(String)
       expect(poster).to have_key(:attributes)
+
       attributes = poster[:attributes]
 
       expect(attributes).to have_key(:description)
@@ -54,8 +55,7 @@ describe "Posters API", type: :request do
       expect(attributes[:vintage]).to be_in([true, false])
 
       expect(attributes).to have_key(:img_url)
-      expect(attributes[:img_url]).to be_a(String)
-      
+      expect(attributes[:img_url]).to be_a(String) 
     end
   end
 end
