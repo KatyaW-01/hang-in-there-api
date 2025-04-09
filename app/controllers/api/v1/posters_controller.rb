@@ -1,7 +1,13 @@
 class Api::V1::PostersController < ApplicationController
   def index
-    posters = Poster.all
-    render json: PosterSerializer.format_posters(posters)
+    if params[:name]
+      posters = Poster.where("LOWER(name) LIKE?", "%#{params[:name]}%")
+      render json: PosterSerializer.format_posters(posters)
+    else
+      posters = Poster.all
+      render json: PosterSerializer.format_posters(posters)
+    end
+
   end
 
 
