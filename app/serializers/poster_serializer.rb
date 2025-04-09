@@ -18,4 +18,5 @@ class PosterSerializer
       data: data
     }
   end
+
 end
