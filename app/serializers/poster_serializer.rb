@@ -14,7 +14,12 @@ class PosterSerializer
         }
       }
     end
-    { data: data }
+    { data: data, 
+      meta: {
+        count: data.count
+      }
+   }
+
   end
 
   def self.format_poster(poster)
