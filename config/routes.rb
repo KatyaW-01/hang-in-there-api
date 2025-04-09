@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "/api/v1/posters", to: "api/v1/posters#index"
 
 
-  delete "/api/v1/posters", to: "api/v1/posters#destroy"
+  delete "/api/v1/posters/:id", to: "api/v1/posters#destroy"
 end
