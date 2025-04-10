@@ -128,5 +128,37 @@ describe "Posters API", type: :request do
 
     expect{Poster.find(poster.id) }.to raise_error(ActiveRecord::RecordNotFound)
   end
+
+  it "filteres according to user input #name" do
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url: "./assets/regret.jpg"
+    )
+  
+     get "/api/v1/posters?name=ter"
+  
+    expect(response).to be_successful
+  
+    poster_response = JSON.parse(response.body, symbolize_names: true)
+    
+  
+    # data = poster_response[:data]
+    # attributes = data[:attributes]
+  
+    # expect(data[:id]).to eq(poster.id.to_s)
+    # expect(data[:type]).to eq("poster")
+    # expect(attributes[:name]).to eq("REGRET")
+    # expect(attributes[:description]).to eq("Hard work rarely pays off.")
+    # expect(attributes[:price]).to eq(89.00)
+    # expect(attributes[:year]).to eq(2018)
+    # expect(attributes[:vintage]).to eq(true)
+    # expect(attributes[:img_url]).to eq("./assets/regret.jpg")
+  end
+
+  
 end
 
