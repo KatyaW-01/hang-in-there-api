@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/spec/requests/api/v1/posters_request_spec.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/spec/requests/api/v1/posters_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -32,6 +32,9 @@
           null,
           1,
           null,
+          1,
+          null,
+          1,
           1,
           null,
           1,
@@ -270,11 +273,113 @@
           1,
           1,
           null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/spec/rails_helper.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -348,7 +453,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/environment.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -357,7 +462,7 @@
           1
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/application.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/application.rb": {
         "lines": [
           1,
           null,
@@ -405,7 +510,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/boot.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -413,7 +518,7 @@
           1
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/environments/test.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -481,7 +586,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/initializers/cors.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -501,7 +606,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/initializers/filter_parameter_logging.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -513,7 +618,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/initializers/inflections.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -533,7 +638,7 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/config/routes.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -553,33 +658,50 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/app/models/poster.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/app/models/poster.rb": {
         "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
           1,
           null,
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/app/models/application_record.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/app/controllers/api/v1/posters_controller.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/app/controllers/api/v1/posters_controller.rb": {
         "lines": [
+          1,
+          1,
+          6,
+          1,
+          1,
+          5,
           1,
           1,
           4,
           1,
           1,
           3,
-          1,
-          1,
           2,
-          1,
-          1,
+          2,
           null,
           1,
           1,
@@ -610,21 +732,19 @@
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/app/controllers/application_controller.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/cateprofir/Desktop/Mod2/hang-in-there-api/app/serializers/poster_serializer.rb": {
+      "/Users/katyaweicht/turing_work/2mod/hang_in_there_api/app/serializers/poster_serializer.rb": {
         "lines": [
           1,
           1,
-          4,
+          6,
           null,
-          7,
-          null,
-          null,
+          13,
           null,
           null,
           null,
@@ -634,7 +754,9 @@
           null,
           null,
           null,
-          4,
+          null,
+          null,
+          6,
           null,
           null,
           null,
@@ -662,6 +784,10 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1744313156
+=======
+    "timestamp": 1744315199
+>>>>>>> 1a0dfff5871b14dd5a3bd7ce172035c20c488fc5
   }
 }
