@@ -100,7 +100,7 @@ describe "Posters API", type: :request do
     headers = { "CONTENT_TYPE" => "application/json"}
 
     post "/api/v1/posters", headers: headers, params: JSON.generate(poster: poster_params)
-    created_poster = Poster.last
+    created_poster = Poster.last         
 
     expect(response).to be_successful
     expect(created_poster.name).to eq(poster_params[:name])
