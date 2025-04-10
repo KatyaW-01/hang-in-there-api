@@ -176,6 +176,21 @@ describe "Posters API", type: :request do
     poster_response = JSON.parse(response.body, symbolize_names: true)
   end
 
+  it "filteres according to max_price" do
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url: "./assets/regret.jpg"
+    )
   
+     get "/api/v1/posters?max_price"
+  
+    expect(response).to be_successful
+  
+    poster_response = JSON.parse(response.body, symbolize_names: true)
+  end
 end
 
