@@ -31,7 +31,10 @@ describe "Posters API", type: :request do
 
     expect(posters).to have_key(:data)
     expect(posters[:data]).to be_an(Array)
-    expect(posters[:data].count).to eq(3)
+    
+    expect(posters).to have_key(:meta)
+    expect(posters[:meta]).to be_an(Hash)
+    expect(posters[:meta][:count]).to eq(3)
 
     posters[:data].each do |poster|
       expect(poster).to have_key(:id)
@@ -100,7 +103,7 @@ describe "Posters API", type: :request do
     headers = { "CONTENT_TYPE" => "application/json"}
 
     post "/api/v1/posters", headers: headers, params: JSON.generate(poster: poster_params)
-    created_poster = Poster.last
+    created_poster = Poster.last         
 
     expect(response).to be_successful
     expect(created_poster.name).to eq(poster_params[:name])
@@ -266,6 +269,108 @@ describe "Posters API", type: :request do
     expect(attributes[:year]).to eq(2019)
     expect(attributes[:vintage]).to eq(true)
     expect(attributes[:img_url]).to eq("./assets/failure.jpg")
+  end
+  it 'can sort by ascending order' do
+    poster = Poster.create(
+      name: "MEDIOCRITY",
+      description: "Dreams are just that—dreams.",
+      price: 127.00,
+      year: 2021,
+      vintage: false,
+      img_url: "./assets/mediocrity.jpg",
+      created_at: "2025-04-08 19:40:19.538863")
+
+
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url:  "./assets/regret.jpg",
+      created_at: "2025-04-08 19:40:19.540318")
+
+    poster = Poster.create(
+      name: "FAILURE",
+      description: "Why bother trying? It's probably not worth it.",
+      price: 68.00,
+      year: 2019,
+      vintage: true,
+      img_url: "./assets/failure.jpg",
+      created_at: "2025-04-08 19:40:19.535758")
+
+    get "/api/v1/posters?sort=asc"
+
+    expect(response).to be_successful
+  
+    posters = JSON.parse(response.body, symbolize_names: true)
+
+    expect(posters).to have_key(:data)
+    expect(posters[:data]).to be_an(Array)
+    
+    expect(posters).to have_key(:meta)
+    expect(posters[:meta]).to be_an(Hash)
+    expect(posters[:meta][:count]).to eq(3)
+
+    data = posters[:data]
+    attributes1 = data[0][:attributes]
+    attributes2 = data[1][:attributes]
+    attributes3 = data[2][:attributes]
+
+    expect(attributes1[:name]).to eq("FAILURE")
+    expect(attributes2[:name]).to eq("MEDIOCRITY")
+    expect(attributes3[:name]).to eq("REGRET")
+  end
+  it 'can sort by descending order' do
+    poster = Poster.create(
+      name: "MEDIOCRITY",
+      description: "Dreams are just that—dreams.",
+      price: 127.00,
+      year: 2021,
+      vintage: false,
+      img_url: "./assets/mediocrity.jpg",
+      created_at: "2025-04-08 19:40:19.538863")
+
+
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url:  "./assets/regret.jpg",
+      created_at: "2025-04-08 19:40:19.540318")
+
+    poster = Poster.create(
+      name: "FAILURE",
+      description: "Why bother trying? It's probably not worth it.",
+      price: 68.00,
+      year: 2019,
+      vintage: true,
+      img_url: "./assets/failure.jpg",
+      created_at: "2025-04-08 19:40:19.535758")
+
+    get "/api/v1/posters?sort=desc"
+
+    expect(response).to be_successful
+  
+    posters = JSON.parse(response.body, symbolize_names: true)
+
+    expect(posters).to have_key(:data)
+    expect(posters[:data]).to be_an(Array)
+    
+    expect(posters).to have_key(:meta)
+    expect(posters[:meta]).to be_an(Hash)
+    expect(posters[:meta][:count]).to eq(3)
+
+    data = posters[:data]
+    attributes1 = data[0][:attributes]
+    attributes2 = data[1][:attributes]
+    attributes3 = data[2][:attributes]
+
+    expect(attributes1[:name]).to eq("REGRET")
+    expect(attributes2[:name]).to eq("MEDIOCRITY")
+    expect(attributes3[:name]).to eq("FAILURE")
   end
 end
 
