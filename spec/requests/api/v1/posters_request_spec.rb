@@ -159,6 +159,23 @@ describe "Posters API", type: :request do
     # expect(attributes[:img_url]).to eq("./assets/regret.jpg")
   end
 
+  it "filteres according to min_price" do
+    poster = Poster.create(
+      name: "REGRET",
+      description: "Hard work rarely pays off.",
+      price: 89.00,
+      year: 2018,
+      vintage: true,
+      img_url: "./assets/regret.jpg"
+    )
+  
+     get "/api/v1/posters?min_price"
+  
+    expect(response).to be_successful
+  
+    poster_response = JSON.parse(response.body, symbolize_names: true)
+  end
+
   
 end
 
