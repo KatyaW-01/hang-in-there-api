@@ -13,7 +13,11 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
+
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-04-10T14:58:06-06:00">2025-04-10T14:58:06-06:00</abbr></div>
+
       <div class="timestamp">Generated <abbr class="timeago" title="2025-04-10T13:59:59-06:00">2025-04-10T13:59:59-06:00</abbr></div>
+
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,13 +26,20 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
+
+  99.64%
+
   99.63%
+
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
+
+         1.26
+
          1.27
        </span>
     </span> hits/line
@@ -42,11 +53,19 @@
   </div>
 
   <div class="t-line-summary">
+
+    <b>281</b> relevant lines,
+    <span class="green"><b>280</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
+    (<span class="green">
+  99.64%
+
     <b>267</b> relevant lines,
     <span class="green"><b>266</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
   99.63%
+
 </span>
 )
   </div>
@@ -72,11 +91,19 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#525f2dc5661676fc32b3f11a7afb0c783c09665e" class="src_link" title="app/controllers/api/v1/posters_controller.rb">app/controllers/api/v1/posters_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+
+            <td class="cell--number">45</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">29</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.59</td>
+
             <td class="cell--number">42</td>
             <td class="cell--number">26</td>
             <td class="cell--number">26</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.62</td>
+
             
           </tr>
         
@@ -120,7 +147,11 @@
             <td class="cell--number">7</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
+
+            <td class="cell--number">4.29</td>
+
             <td class="cell--number">4.14</td>
+
             
           </tr>
         
@@ -204,9 +235,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9e612069c9ab4133e61055b0f7acba4570e8886e" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -226,11 +257,19 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#329ca8ce088ffddaea1f3f309d2bdaf21e1a4f63" class="src_link" title="spec/requests/api/v1/posters_request_spec.rb">spec/requests/api/v1/posters_request_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+
+            <td class="cell--number">395</td>
+            <td class="cell--number">173</td>
+            <td class="cell--number">173</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.19</td>
+
             <td class="cell--number">376</td>
             <td class="cell--number">163</td>
             <td class="cell--number">163</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.20</td>
+
             
           </tr>
         
@@ -265,8 +304,13 @@
     
 
     <div class="t-line-summary">
+
+      <b>29</b> relevant lines.
+      <span class="green"><b>29</b> lines covered</span> and
+
       <b>26</b> relevant lines.
       <span class="green"><b>26</b> lines covered</span> and
+
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -413,6 +457,8 @@
           <li class="covered" data-hits="3" data-linenumber="12">
             
               <span class="hits">3</span>
+
+
             
 
             
@@ -447,30 +493,38 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="15">
-            
 
             
 
-            <code class="ruby">    else</code>
+            
+
+            <code class="ruby">    elsif params[:sort]</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="2" data-linenumber="13">
+
           <li class="covered" data-hits="1" data-linenumber="16">
+
             
-              <span class="hits">1</span>
+              <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      posters = Poster.all</code>
+            <code class="ruby">      posters = Poster.sorting(params[:sort])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
+
+          <li class="covered" data-hits="2" data-linenumber="14">
+
+          <li class="covered" data-hits="1" data-linenumber="17">>>>>>>> main
             
-              <span class="hits">1</span>
+              <span class="hits">2</span>
             
 
             
@@ -485,12 +539,54 @@
 
             
 
+            <code class="ruby">    else</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="16">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="19">
+
+            
+
+            
+
+            <code class="ruby">      posters = Poster.all</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="17">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="20">
+
+            
+
+            
+
+            <code class="ruby">      render json: PosterSerializer.format_posters(posters)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+
+            
+
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="22">
             
 
             
@@ -500,6 +596,7 @@
         </div>
       
         <div>
+
           <li class="never" data-hits="" data-linenumber="20">
             
 
@@ -520,17 +617,10 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
+          <li class="covered" data-hits="1" data-linenumber="22">
 
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
           <li class="covered" data-hits="1" data-linenumber="23">
+
             
               <span class="hits">1</span>
             
@@ -542,7 +632,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="23">
+
           <li class="covered" data-hits="1" data-linenumber="24">
+
             
               <span class="hits">1</span>
             
@@ -554,7 +648,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="24">
+
           <li class="covered" data-hits="1" data-linenumber="25">
+
             
               <span class="hits">1</span>
             
@@ -566,7 +664,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="25">
+
           <li class="never" data-hits="" data-linenumber="26">
+
             
 
             
@@ -576,7 +678,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="26">
+
           <li class="never" data-hits="" data-linenumber="27">
+
             
 
             
@@ -586,7 +692,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="27">
+
           <li class="covered" data-hits="1" data-linenumber="28">
+
             
               <span class="hits">1</span>
             
@@ -598,7 +708,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="28">
+
           <li class="covered" data-hits="1" data-linenumber="29">
+
             
               <span class="hits">1</span>
             
@@ -610,7 +724,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="29">
+
           <li class="never" data-hits="" data-linenumber="30">
+
             
 
             
@@ -620,12 +738,29 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="30">
+
           <li class="never" data-hits="" data-linenumber="31">
+
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="31">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def update</code>
           </li>
         </div>
       
@@ -637,7 +772,7 @@
 
             
 
-            <code class="ruby">  def destroy</code>
+            <code class="ruby">    poster = Poster.update(params[:id], poster_params)</code>
           </li>
         </div>
       
@@ -649,7 +784,7 @@
 
             
 
-            <code class="ruby">    render json: Poster.delete(params[:id])</code>
+            <code class="ruby">    render json: PosterSerializer.format_poster(poster)</code>
           </li>
         </div>
       
@@ -664,7 +799,56 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+
+          <li class="covered" data-hits="1" data-linenumber="32">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="36">
+
+          <li class="covered" data-hits="1" data-linenumber="33">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    render json: Poster.delete(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="37">
+
+          <li class="never" data-hits="" data-linenumber="34">
+
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="38">
+
           <li class="never" data-hits="" data-linenumber="35">
+
             
 
             
@@ -674,7 +858,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="39">
+
           <li class="covered" data-hits="1" data-linenumber="36">
+
             
               <span class="hits">1</span>
             
@@ -686,7 +874,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="40">
+
           <li class="never" data-hits="" data-linenumber="37">
+
             
 
             
@@ -696,7 +888,11 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="41">
+
           <li class="covered" data-hits="1" data-linenumber="38">
+
             
               <span class="hits">1</span>
             
@@ -708,9 +904,13 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="2" data-linenumber="42">
+
           <li class="covered" data-hits="1" data-linenumber="39">
+
             
-              <span class="hits">1</span>
+              <span class="hits">2</span>
             
 
             
@@ -720,7 +920,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="43">
+
           <li class="never" data-hits="" data-linenumber="40">
+
             
 
             
@@ -730,7 +934,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="44">
+
           <li class="never" data-hits="" data-linenumber="41">
+
             
 
             
@@ -740,7 +948,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="45">
+
           <li class="never" data-hits="" data-linenumber="42">
+
             
 
             
@@ -911,6 +1123,7 @@
         </div>
       
         <div>
+
           <li class="covered" data-hits="1" data-linenumber="2">
             
               <span class="hits">1</span>
@@ -1078,6 +1291,244 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="17">
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="1092afe2907e2bf966b38b0c82e26e34edd035f4">
+  <div class="header">
+    <h3>app/serializers/poster_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class PosterSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="2">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.sorting(direction)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="2" data-linenumber="3">
+            
+              <span class="hits">2</span>
+
+          <li class="covered" data-hits="6" data-linenumber="3">
+            
+              <span class="hits">6</span>
+
+            
+
+            
+
+            <code class="ruby">      order(created_at: direction)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="5">
+
+          <li class="covered" data-hits="13" data-linenumber="5">
+            
+              <span class="hits">13</span>
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.filterName(name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    where(&quot;LOWER(name) LIKE?&quot;, &quot;%#{name}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.maxPrice(price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    where(&quot;price &lt;= #{price}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.minPrice(price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    where(&quot;price &gt;= #{price}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="17">
+
+          <li class="covered" data-hits="6" data-linenumber="17">
+            
+              <span class="hits">6</span>
+
             
 
             
@@ -1390,9 +1841,9 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
+          <li class="covered" data-hits="2" data-linenumber="27">
             
-              <span class="hits">1</span>
+              <span class="hits">2</span>
             
 
             
@@ -3431,8 +3882,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3591,12 +4042,24 @@
 
             
 
+            <code class="ruby">  patch &quot;/api/v1/posters/:id&quot;, to: &quot;api/v1/posters#update&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  delete &quot;/api/v1/posters/:id&quot;, to: &quot;api/v1/posters#destroy&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="never" data-hits="" data-linenumber="16">
             
 
             
@@ -3606,7 +4069,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="17">
             
 
             
@@ -4385,8 +4848,13 @@
     
 
     <div class="t-line-summary">
+
+      <b>173</b> relevant lines.
+      <span class="green"><b>173</b> lines covered</span> and
+
       <b>163</b> relevant lines.
       <span class="green"><b>163</b> lines covered</span> and
+
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4785,6 +5253,8 @@
       
         <div>
           <li class="covered" data-hits="1" data-linenumber="37">
+
+
             
               <span class="hits">1</span>
             
@@ -4819,37 +5289,45 @@
       
         <div>
           <li class="covered" data-hits="3" data-linenumber="40">
+
             
-              <span class="hits">3</span>
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      expect(poster).to have_key(:id)</code>
+            <code class="ruby">    expect(posters[:meta][:count]).to eq(3)</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="38">
+
           <li class="covered" data-hits="3" data-linenumber="41">
             
               <span class="hits">3</span>
-            
 
             
 
-            <code class="ruby">      expect(poster[:id]).to be_an(String)</code>
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="39">
+
           <li class="covered" data-hits="3" data-linenumber="42">
-            
-              <span class="hits">3</span>
+
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      expect(poster).to have_key(:type)</code>
+            <code class="ruby">    posters[:data].each do |poster|</code>
           </li>
         </div>
       
@@ -4861,7 +5339,7 @@
 
             
 
-            <code class="ruby">      expect(poster[:type]).to be_a(String)</code>
+            <code class="ruby">      expect(poster).to have_key(:id)</code>
           </li>
         </div>
       
@@ -4873,17 +5351,23 @@
 
             
 
-            <code class="ruby">      expect(poster).to have_key(:attributes)</code>
+            <code class="ruby">      expect(poster[:id]).to be_an(String)</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="3" data-linenumber="42">
+            
+              <span class="hits">3</span>
+
           <li class="never" data-hits="" data-linenumber="45">
-            
 
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      expect(poster).to have_key(:type)</code>
           </li>
         </div>
       
@@ -4895,29 +5379,39 @@
 
             
 
-            <code class="ruby">      attributes = poster[:attributes]</code>
+            <code class="ruby">      expect(poster[:type]).to be_a(String)</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="3" data-linenumber="44">
+            
+              <span class="hits">3</span>
+
           <li class="never" data-hits="" data-linenumber="47">
+
+            
+
+            
+
+            <code class="ruby">      expect(poster).to have_key(:attributes)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="45">
+
+          <li class="covered" data-hits="3" data-linenumber="48">
+            
+              <span class="hits">3</span>
+
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="48">
-            
-              <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">      expect(attributes).to have_key(:description)</code>
           </li>
         </div>
       
@@ -4929,7 +5423,7 @@
 
             
 
-            <code class="ruby">      expect(attributes[:description]).to be_a(String)</code>
+            <code class="ruby">      attributes = poster[:attributes]</code>
           </li>
         </div>
       
@@ -4951,7 +5445,7 @@
 
             
 
-            <code class="ruby">      expect(attributes).to have_key(:price)</code>
+            <code class="ruby">      expect(attributes).to have_key(:description)</code>
           </li>
         </div>
       
@@ -4963,7 +5457,7 @@
 
             
 
-            <code class="ruby">      expect(attributes[:price]).to be_a(Float)</code>
+            <code class="ruby">      expect(attributes[:description]).to be_a(String)</code>
           </li>
         </div>
       
@@ -4985,7 +5479,7 @@
 
             
 
-            <code class="ruby">      expect(attributes).to have_key(:year)</code>
+            <code class="ruby">      expect(attributes).to have_key(:price)</code>
           </li>
         </div>
       
@@ -4997,7 +5491,7 @@
 
             
 
-            <code class="ruby">      expect(attributes[:year]).to be_an(Integer)</code>
+            <code class="ruby">      expect(attributes[:price]).to be_a(Float)</code>
           </li>
         </div>
       
@@ -5019,7 +5513,7 @@
 
             
 
-            <code class="ruby">      expect(attributes).to have_key(:vintage)</code>
+            <code class="ruby">      expect(attributes).to have_key(:year)</code>
           </li>
         </div>
       
@@ -5031,12 +5525,46 @@
 
             
 
-            <code class="ruby">      expect(attributes[:vintage]).to be_in([true, false])</code>
+            <code class="ruby">      expect(attributes[:year]).to be_an(Integer)</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="59">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="60">
+            
+              <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      expect(attributes).to have_key(:vintage)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="61">
+            
+              <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      expect(attributes[:vintage]).to be_in([true, false])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
             
 
             
@@ -5664,6 +6192,9 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="116">
+
           <li class="never" data-hits="" data-linenumber="116">
             
 
@@ -5675,23 +6206,30 @@
       
         <div>
           <li class="covered" data-hits="1" data-linenumber="117">
+
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  it &#39;can destroy a poster&#39; do</code>
+            <code class="ruby">  it &#39;can update a poster&#39; do</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="117">
+
           <li class="covered" data-hits="1" data-linenumber="118">
+
             
               <span class="hits">1</span>
             
 
             
+
+            <code class="ruby">    posterId = Poster.create( </code>
 
             <code class="ruby">    poster = Poster.create(name: &quot;HOPELESSNESS&quot;,</code>
           </li>
@@ -5714,6 +6252,7 @@
             
 
             <code class="ruby">    price: 112.00,</code>
+
           </li>
         </div>
       
@@ -5723,7 +6262,7 @@
 
             
 
-            <code class="ruby">    year: 2020,</code>
+            <code class="ruby">    name: &quot;FAILURE&quot;,</code>
           </li>
         </div>
       
@@ -5733,7 +6272,7 @@
 
             
 
-            <code class="ruby">    vintage: true,</code>
+            <code class="ruby">    description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
           </li>
         </div>
       
@@ -5743,7 +6282,7 @@
 
             
 
-            <code class="ruby">    img_url: &quot;./assets/hopelessness.jpg&quot;)</code>
+            <code class="ruby">    price: 68.0,</code>
           </li>
         </div>
       
@@ -5753,19 +6292,23 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    year: 2019,</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="122">
+
           <li class="covered" data-hits="1" data-linenumber="125">
             
               <span class="hits">1</span>
-            
 
             
 
-            <code class="ruby">    expect(Poster.count).to eq(1)</code>
+            
+
+            <code class="ruby">    vintage: true,</code>
           </li>
         </div>
       
@@ -5775,29 +6318,39 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    img_url: &quot;./assets/failure.jpg&quot;).id</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="124">
+
           <li class="covered" data-hits="1" data-linenumber="127">
             
               <span class="hits">1</span>
-            
 
-            
-
-            <code class="ruby">    delete &quot;/api/v1/posters/#{poster.id}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="128">
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="125">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="128">
+
+            
+
+            
+
+            <code class="ruby">    previous_name = Poster.last.name</code>
           </li>
         </div>
       
@@ -5809,7 +6362,7 @@
 
             
 
-            <code class="ruby">    expect(response).to be_successful</code>
+            <code class="ruby">    poster_params = {name: &quot;CRY&quot;}</code>
           </li>
         </div>
       
@@ -5821,7 +6374,7 @@
 
             
 
-            <code class="ruby">    expect(Poster.count).to eq(0)</code>
+            <code class="ruby">    headers = {&quot;CONTENT_TYPE&quot; =&gt; &quot;application/json&quot;}</code>
           </li>
         </div>
       
@@ -5836,14 +6389,18 @@
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="129">
+
           <li class="covered" data-hits="2" data-linenumber="132">
+
             
-              <span class="hits">2</span>
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect{Poster.find(poster.id) }.to raise_error(ActiveRecord::RecordNotFound)</code>
+            <code class="ruby">    patch &quot;/api/v1/posters/#{posterId}&quot;, headers: headers, params: JSON.generate({poster: poster_params})</code>
           </li>
         </div>
       
@@ -5853,17 +6410,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="131">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="134">
-            
 
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    poster = Poster.find_by(id: posterId)</code>
           </li>
         </div>
       
@@ -5875,7 +6438,7 @@
 
             
 
-            <code class="ruby">  it &quot;filteres according to user input #name&quot; do</code>
+            <code class="ruby">    expect(response).to be_successful</code>
           </li>
         </div>
       
@@ -5887,17 +6450,22 @@
 
             
 
-            <code class="ruby">    poster = Poster.create(</code>
+            <code class="ruby">    expect(poster.name).to_not eq(previous_name)</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="134">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="137">
-            
+
 
             
 
-            <code class="ruby">      name: &quot;REGRET&quot;,</code>
+            <code class="ruby">    expect(poster.name).to eq(&quot;CRY&quot;)</code>
           </li>
         </div>
       
@@ -5907,27 +6475,39 @@
 
             
 
-            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="136">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="139">
-            
 
             
 
-            <code class="ruby">      price: 89.00,</code>
+            
+
+            <code class="ruby">  it &#39;can destroy a poster&#39; do</code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="137">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="140">
-            
 
             
 
-            <code class="ruby">      year: 2018,</code>
+            
+
+            <code class="ruby">    poster = Poster.create(name: &quot;HOPELESSNESS&quot;,</code>
           </li>
         </div>
       
@@ -5937,7 +6517,7 @@
 
             
 
-            <code class="ruby">      vintage: true,</code>
+            <code class="ruby">    description: &quot;Stay in your comfort zone; it&#39;s safer.&quot;,</code>
           </li>
         </div>
       
@@ -5947,7 +6527,7 @@
 
             
 
-            <code class="ruby">      img_url: &quot;./assets/regret.jpg&quot;)</code>
+            <code class="ruby">    price: 112.00,</code>
           </li>
         </div>
       
@@ -5957,19 +6537,23 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">    year: 2020,</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="141">
+
           <li class="covered" data-hits="1" data-linenumber="144">
             
               <span class="hits">1</span>
-            
 
             
 
-            <code class="ruby">      poster = Poster.create(</code>
+            
+
+            <code class="ruby">    vintage: true,</code>
           </li>
         </div>
       
@@ -5979,7 +6563,7 @@
 
             
 
-            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
+            <code class="ruby">    img_url: &quot;./assets/hopelessness.jpg&quot;)</code>
           </li>
         </div>
       
@@ -5989,17 +6573,23 @@
 
             
 
-            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="144">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="147">
-            
 
             
 
-            <code class="ruby">      price: 127.00,</code>
+            
+
+            <code class="ruby">    expect(Poster.count).to eq(1)</code>
           </li>
         </div>
       
@@ -6009,17 +6599,23 @@
 
             
 
-            <code class="ruby">      year: 2021,</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="146">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="149">
-            
 
             
 
-            <code class="ruby">      vintage: false,</code>
+            
+
+            <code class="ruby">    delete &quot;/api/v1/posters/#{poster.id}&quot;</code>
           </li>
         </div>
       
@@ -6029,17 +6625,23 @@
 
             
 
-            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="148">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="151">
-            
 
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">    expect(response).to be_successful</code>
           </li>
         </div>
       
@@ -6051,7 +6653,7 @@
 
             
 
-            <code class="ruby">     get &quot;/api/v1/posters?name=ret&quot;</code>
+            <code class="ruby">    expect(Poster.count).to eq(0)</code>
           </li>
         </div>
       
@@ -6061,19 +6663,22 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="2" data-linenumber="151">
           <li class="covered" data-hits="1" data-linenumber="154">
+
             
-              <span class="hits">1</span>
+              <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    expect(response).to be_successful</code>
+            <code class="ruby">    expect{Poster.find(poster.id) }.to raise_error(ActiveRecord::RecordNotFound)</code>
           </li>
         </div>
       
@@ -6083,29 +6688,39 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="153">
+
           <li class="covered" data-hits="1" data-linenumber="156">
             
               <span class="hits">1</span>
-            
 
             
 
-            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
+
+          <li class="covered" data-hits="1" data-linenumber="154">
+            
+              <span class="hits">1</span>
+
           <li class="never" data-hits="" data-linenumber="157">
-            
 
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">  it &quot;filteres according to user input #name&quot; do</code>
           </li>
         </div>
       
@@ -6117,55 +6732,81 @@
 
             
 
-            <code class="ruby">    expect(posters).to have_key(:data)</code>
+            <code class="ruby">    poster = Poster.create(</code>
           </li>
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="156">
+
           <li class="covered" data-hits="1" data-linenumber="159">
-            
-              <span class="hits">1</span>
-            
 
             
 
-            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
+            
+
+            <code class="ruby">      name: &quot;REGRET&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="160">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="157">
             
 
             
 
-            <code class="ruby">    expect(posters[:data].count).to eq(1)</code>
+            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="161">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="158">
             
 
             
 
-            <code class="ruby">    data = posters[:data]</code>
+            <code class="ruby">      price: 89.00,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="162">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="159">
             
 
             
 
-            <code class="ruby">    attributes = data[0][:attributes]</code>
+            <code class="ruby">      year: 2018,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="160">
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="161">
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/regret.jpg&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="162">
+            
+
+            
+
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -6177,67 +6818,57 @@
 
             
 
-            <code class="ruby">    expect(attributes[:name]).to eq(&quot;REGRET&quot;)</code>
+            <code class="ruby">      poster = Poster.create(</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="164">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="164">
             
 
             
 
-            <code class="ruby">    expect(attributes[:description]).to eq(&quot;Hard work rarely pays off.&quot;)</code>
+            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="165">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="165">
             
 
             
 
-            <code class="ruby">    expect(attributes[:price]).to eq(89.00)</code>
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="166">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="166">
             
 
             
 
-            <code class="ruby">    expect(attributes[:year]).to eq(2018)</code>
+            <code class="ruby">      price: 127.00,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="167">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="167">
             
 
             
 
-            <code class="ruby">    expect(attributes[:vintage]).to eq(true)</code>
+            <code class="ruby">      year: 2021,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="168">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="168">
             
 
             
 
-            <code class="ruby">    expect(attributes[:img_url]).to eq(&quot;./assets/regret.jpg&quot;)</code>
+            <code class="ruby">      vintage: false,</code>
           </li>
         </div>
       
@@ -6247,7 +6878,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
           </li>
         </div>
       
@@ -6257,7 +6888,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -6269,280 +6900,12 @@
 
             
 
-            <code class="ruby">  it &quot;filteres according to min_price&quot; do</code>
+            <code class="ruby">     get &quot;/api/v1/posters?name=ret&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="172">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    poster = Poster.create(</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="173">
-            
-
-            
-
-            <code class="ruby">      name: &quot;REGRET&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="174">
-            
-
-            
-
-            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="175">
-            
-
-            
-
-            <code class="ruby">      price: 89.00,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="176">
-            
-
-            
-
-            <code class="ruby">      year: 2018,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="177">
-            
-
-            
-
-            <code class="ruby">      vintage: true,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="178">
-            
-
-            
-
-            <code class="ruby">      img_url: &quot;./assets/regret.jpg&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="179">
-            
-
-            
-
-            <code class="ruby">    )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="180">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    poster =  Poster.create(</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="181">
-            
-
-            
-
-            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="182">
-            
-
-            
-
-            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="183">
-            
-
-            
-
-            <code class="ruby">      price: 127.00,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="184">
-            
-
-            
-
-            <code class="ruby">      year: 2021,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="185">
-            
-
-            
-
-            <code class="ruby">      vintage: false,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="186">
-            
-
-            
-
-            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="187">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="188">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    poster = Poster.create(</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="189">
-            
-
-            
-
-            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="190">
-            
-
-            
-
-            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="191">
-            
-
-            
-
-            <code class="ruby">      price: 68.00,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="192">
-            
-
-            
-
-            <code class="ruby">      year: 2019,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="193">
-            
-
-            
-
-            <code class="ruby">      vintage: true,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="194">
-            
-
-            
-
-            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="195">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="196">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="197">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">     get &quot;/api/v1/posters?min_price=88&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="198">
+          <li class="never" data-hits="" data-linenumber="172">
             
 
             
@@ -6552,7 +6915,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="199">
+          <li class="covered" data-hits="1" data-linenumber="173">
             
               <span class="hits">1</span>
             
@@ -6564,17 +6927,17 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="200">
+          <li class="never" data-hits="" data-linenumber="174">
             
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="201">
+          <li class="covered" data-hits="1" data-linenumber="175">
             
               <span class="hits">1</span>
             
@@ -6586,27 +6949,17 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="202">
+          <li class="never" data-hits="" data-linenumber="176">
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="203">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="204">
+          <li class="covered" data-hits="1" data-linenumber="177">
             
               <span class="hits">1</span>
             
@@ -6618,7 +6971,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="205">
+          <li class="covered" data-hits="1" data-linenumber="178">
             
               <span class="hits">1</span>
             
@@ -6630,29 +6983,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="206">
+          <li class="covered" data-hits="1" data-linenumber="179">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(posters[:data].count).to eq(2)</code>
+            <code class="ruby">    expect(posters[:data].count).to eq(1)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="207">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="208">
+          <li class="covered" data-hits="1" data-linenumber="180">
             
               <span class="hits">1</span>
             
@@ -6664,91 +7007,101 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="209">
+          <li class="covered" data-hits="1" data-linenumber="181">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    attributes1 = data[0][:attributes]</code>
+            <code class="ruby">    attributes = data[0][:attributes]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="210">
+          <li class="covered" data-hits="1" data-linenumber="182">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:name]).to eq(&quot;REGRET&quot;)</code>
+            <code class="ruby">    expect(attributes[:name]).to eq(&quot;REGRET&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="211">
+          <li class="covered" data-hits="1" data-linenumber="183">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:description]).to eq(&quot;Hard work rarely pays off.&quot;)</code>
+            <code class="ruby">    expect(attributes[:description]).to eq(&quot;Hard work rarely pays off.&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="212">
+          <li class="covered" data-hits="1" data-linenumber="184">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:price]).to eq(89.00)</code>
+            <code class="ruby">    expect(attributes[:price]).to eq(89.00)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="213">
+          <li class="covered" data-hits="1" data-linenumber="185">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:year]).to eq(2018)</code>
+            <code class="ruby">    expect(attributes[:year]).to eq(2018)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="214">
+          <li class="covered" data-hits="1" data-linenumber="186">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:vintage]).to eq(true)</code>
+            <code class="ruby">    expect(attributes[:vintage]).to eq(true)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="215">
+          <li class="covered" data-hits="1" data-linenumber="187">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    expect(attributes1[:img_url]).to eq(&quot;./assets/regret.jpg&quot;)</code>
+            <code class="ruby">    expect(attributes[:img_url]).to eq(&quot;./assets/regret.jpg&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="216">
+          <li class="never" data-hits="" data-linenumber="188">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="189">
             
 
             
@@ -6758,14 +7111,292 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="217">
+          <li class="covered" data-hits="1" data-linenumber="190">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    attributes2 = data[1][:attributes]</code>
+            <code class="ruby">  it &quot;filteres according to min_price&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="191">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="192">
+            
+
+            
+
+            <code class="ruby">      name: &quot;REGRET&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="193">
+            
+
+            
+
+            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="194">
+            
+
+            
+
+            <code class="ruby">      price: 89.00,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="195">
+            
+
+            
+
+            <code class="ruby">      year: 2018,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="196">
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="197">
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/regret.jpg&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="198">
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="199">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster =  Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="200">
+            
+
+            
+
+            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="201">
+            
+
+            
+
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="202">
+            
+
+            
+
+            <code class="ruby">      price: 127.00,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="203">
+            
+
+            
+
+            <code class="ruby">      year: 2021,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="204">
+            
+
+            
+
+            <code class="ruby">      vintage: false,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="205">
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="206">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="207">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="208">
+            
+
+            
+
+            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="209">
+            
+
+            
+
+            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="210">
+            
+
+            
+
+            <code class="ruby">      price: 68.00,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="211">
+            
+
+            
+
+            <code class="ruby">      year: 2019,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="212">
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="213">
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="214">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="215">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="216">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">     get &quot;/api/v1/posters?min_price=88&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="217">
+            
+
+            
+
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -6777,19 +7408,17 @@
 
             
 
-            <code class="ruby">    expect(attributes2[:name]).to eq(&quot;MEDIOCRITY&quot;)</code>
+            <code class="ruby">    expect(response).to be_successful</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="219">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="219">
             
 
             
 
-            <code class="ruby">    expect(attributes2[:description]).to eq(&quot;Dreams are just that—dreams.&quot;)</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -6801,31 +7430,27 @@
 
             
 
-            <code class="ruby">    expect(attributes2[:price]).to eq(127.00)</code>
+            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="221">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="221">
             
 
             
 
-            <code class="ruby">    expect(attributes2[:year]).to eq(2021)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="222">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="222">
             
 
             
 
-            <code class="ruby">    expect(attributes2[:vintage]).to eq(false)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6837,27 +7462,31 @@
 
             
 
-            <code class="ruby">    expect(attributes2[:img_url]).to eq(&quot;./assets/mediocrity.jpg&quot;)</code>
+            <code class="ruby">    expect(posters).to have_key(:data)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="224">
+          <li class="covered" data-hits="1" data-linenumber="224">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="225">
+          <li class="covered" data-hits="1" data-linenumber="225">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    expect(posters[:data].count).to eq(2)</code>
           </li>
         </div>
       
@@ -6872,22 +7501,26 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="227">
+          <li class="covered" data-hits="1" data-linenumber="227">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    data = posters[:data]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="228">
+          <li class="covered" data-hits="1" data-linenumber="228">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    attributes1 = data[0][:attributes]</code>
           </li>
         </div>
       
@@ -6899,7 +7532,7 @@
 
             
 
-            <code class="ruby">  it &quot;filteres according to max_price&quot; do</code>
+            <code class="ruby">    expect(attributes1[:name]).to eq(&quot;REGRET&quot;)</code>
           </li>
         </div>
       
@@ -6911,47 +7544,55 @@
 
             
 
-            <code class="ruby">    poster = Poster.create(</code>
+            <code class="ruby">    expect(attributes1[:description]).to eq(&quot;Hard work rarely pays off.&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="231">
+          <li class="covered" data-hits="1" data-linenumber="231">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
+            <code class="ruby">    expect(attributes1[:price]).to eq(89.00)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="232">
+          <li class="covered" data-hits="1" data-linenumber="232">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+            <code class="ruby">    expect(attributes1[:year]).to eq(2018)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="233">
+          <li class="covered" data-hits="1" data-linenumber="233">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      price: 127.00,</code>
+            <code class="ruby">    expect(attributes1[:vintage]).to eq(true)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="234">
+          <li class="covered" data-hits="1" data-linenumber="234">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      year: 2021,</code>
+            <code class="ruby">    expect(attributes1[:img_url]).to eq(&quot;./assets/regret.jpg&quot;)</code>
           </li>
         </div>
       
@@ -6961,27 +7602,31 @@
 
             
 
-            <code class="ruby">      vintage: false,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="236">
-            
-
-            
-
-            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="237">
-            
-
-            
-
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="236">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes2 = data[1][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="237">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes2[:name]).to eq(&quot;MEDIOCRITY&quot;)</code>
           </li>
         </div>
       
@@ -6993,47 +7638,55 @@
 
             
 
-            <code class="ruby">    poster = Poster.create(</code>
+            <code class="ruby">    expect(attributes2[:description]).to eq(&quot;Dreams are just that—dreams.&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="239">
+          <li class="covered" data-hits="1" data-linenumber="239">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      name: &quot;REGRET&quot;,</code>
+            <code class="ruby">    expect(attributes2[:price]).to eq(127.00)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="240">
+          <li class="covered" data-hits="1" data-linenumber="240">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
+            <code class="ruby">    expect(attributes2[:year]).to eq(2021)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="241">
+          <li class="covered" data-hits="1" data-linenumber="241">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      price: 89.00,</code>
+            <code class="ruby">    expect(attributes2[:vintage]).to eq(false)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="242">
+          <li class="covered" data-hits="1" data-linenumber="242">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      year: 2018,</code>
+            <code class="ruby">    expect(attributes2[:img_url]).to eq(&quot;./assets/mediocrity.jpg&quot;)</code>
           </li>
         </div>
       
@@ -7043,7 +7696,7 @@
 
             
 
-            <code class="ruby">      vintage: true,</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7053,7 +7706,7 @@
 
             
 
-            <code class="ruby">      img_url:  &quot;./assets/regret.jpg&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7068,7 +7721,39 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="246">
+          <li class="never" data-hits="" data-linenumber="246">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="247">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="248">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &quot;filteres according to max_price&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="249">
             
               <span class="hits">1</span>
             
@@ -7080,42 +7765,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="247">
-            
-
-            
-
-            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="248">
-            
-
-            
-
-            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="249">
-            
-
-            
-
-            <code class="ruby">      price: 68.00,</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="never" data-hits="" data-linenumber="250">
             
 
             
 
-            <code class="ruby">      year: 2019,</code>
+            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
           </li>
         </div>
       
@@ -7125,7 +7780,7 @@
 
             
 
-            <code class="ruby">      vintage: true,</code>
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
           </li>
         </div>
       
@@ -7135,7 +7790,7 @@
 
             
 
-            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;)</code>
+            <code class="ruby">      price: 127.00,</code>
           </li>
         </div>
       
@@ -7145,7 +7800,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      year: 2021,</code>
           </li>
         </div>
       
@@ -7155,19 +7810,17 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">      vintage: false,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="255">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="255">
             
 
             
 
-            <code class="ruby">     get &quot;/api/v1/posters?max_price=88&quot;</code>
+            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;)</code>
           </li>
         </div>
       
@@ -7177,7 +7830,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7189,7 +7842,7 @@
 
             
 
-            <code class="ruby">    expect(response).to be_successful</code>
+            <code class="ruby">    poster = Poster.create(</code>
           </li>
         </div>
       
@@ -7199,19 +7852,17 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">      name: &quot;REGRET&quot;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="259">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="259">
             
 
             
 
-            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
+            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
           </li>
         </div>
       
@@ -7221,55 +7872,47 @@
 
             
 
+            <code class="ruby">      price: 89.00,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="261">
+            
+
+            
+
+            <code class="ruby">      year: 2018,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="262">
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="263">
+            
+
+            
+
+            <code class="ruby">      img_url:  &quot;./assets/regret.jpg&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="264">
+            
+
+            
+
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="261">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(posters).to have_key(:data)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="262">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="263">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(posters[:data].count).to eq(1)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="264">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    data = posters[:data]</code>
           </li>
         </div>
       
@@ -7281,12 +7924,231 @@
 
             
 
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="266">
+            
+
+            
+
+            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="267">
+            
+
+            
+
+            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="268">
+            
+
+            
+
+            <code class="ruby">      price: 68.00,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="269">
+            
+
+            
+
+            <code class="ruby">      year: 2019,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="270">
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="271">
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="272">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="273">
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="274">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">     get &quot;/api/v1/posters?max_price=88&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="275">
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="276">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="277">
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="278">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="279">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="280">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters).to have_key(:data)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="281">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="282">
+
+          <li class="covered" data-hits="1" data-linenumber="160">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:data].count).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="283">
+
+          <li class="covered" data-hits="1" data-linenumber="161">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    data = posters[:data]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="284">
+
+          <li class="covered" data-hits="1" data-linenumber="162">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    attributes = data[0][:attributes]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="266">
+
+          <li class="covered" data-hits="1" data-linenumber="285">
             
               <span class="hits">1</span>
             
@@ -7298,7 +8160,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="267">
+          <li class="covered" data-hits="1" data-linenumber="286">
             
               <span class="hits">1</span>
             
@@ -7310,7 +8172,10 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="268">
+          <li class="covered" data-hits="1" data-linenumber="287">
+
+          <li class="covered" data-hits="1" data-linenumber="163">
+
             
               <span class="hits">1</span>
             
@@ -7322,7 +8187,11 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="269">
+
+          <li class="covered" data-hits="1" data-linenumber="288">
+
+          <li class="covered" data-hits="1" data-linenumber="164">
+
             
               <span class="hits">1</span>
             
@@ -7334,7 +8203,11 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="270">
+
+          <li class="covered" data-hits="1" data-linenumber="289">
+
+          <li class="covered" data-hits="1" data-linenumber="165">
+
             
               <span class="hits">1</span>
             
@@ -7346,7 +8219,11 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="271">
+
+          <li class="covered" data-hits="1" data-linenumber="290">
+
+          <li class="covered" data-hits="1" data-linenumber="166">
+
             
               <span class="hits">1</span>
             
@@ -7358,6 +8235,1575 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="291">
+
+          <li class="covered" data-hits="1" data-linenumber="167">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="292">
+
+          <li class="covered" data-hits="1" data-linenumber="168">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;can sort by ascending order&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="293">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="169">
+
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="294">
+
+          <li class="never" data-hits="" data-linenumber="170">
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="295">
+
+          <li class="covered" data-hits="1" data-linenumber="171">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="296">
+
+          <li class="covered" data-hits="1" data-linenumber="172">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      price: 127.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="297">
+
+          <li class="never" data-hits="" data-linenumber="173">
+
+            
+
+            
+
+            <code class="ruby">      year: 2021,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="298">
+
+          <li class="never" data-hits="" data-linenumber="174">
+
+            
+
+            
+
+            <code class="ruby">      vintage: false,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="299">
+
+          <li class="never" data-hits="" data-linenumber="175">
+
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="300">
+
+          <li class="never" data-hits="" data-linenumber="176">
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.538863&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="301">
+
+          <li class="never" data-hits="" data-linenumber="177">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="302">
+
+          <li class="never" data-hits="" data-linenumber="178">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="303">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="179">
+
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="304">
+
+          <li class="covered" data-hits="1" data-linenumber="180">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;REGRET&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="305">
+
+          <li class="never" data-hits="" data-linenumber="181">
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="306">
+
+          <li class="never" data-hits="" data-linenumber="182">
+
+            
+
+            
+
+            <code class="ruby">      price: 89.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="307">
+
+          <li class="never" data-hits="" data-linenumber="183">
+
+            
+
+            
+
+            <code class="ruby">      year: 2018,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="308">
+
+          <li class="never" data-hits="" data-linenumber="184">
+
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="309">
+
+          <li class="never" data-hits="" data-linenumber="185">
+
+            
+
+            
+
+            <code class="ruby">      img_url:  &quot;./assets/regret.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="310">
+
+          <li class="never" data-hits="" data-linenumber="186">
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.540318&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="311">
+
+          <li class="never" data-hits="" data-linenumber="187">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="312">
+
+          <li class="covered" data-hits="1" data-linenumber="188">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="313">
+
+          <li class="never" data-hits="" data-linenumber="189">
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="314">
+
+          <li class="never" data-hits="" data-linenumber="190">
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="315">
+
+          <li class="never" data-hits="" data-linenumber="191">
+
+            
+
+            
+
+            <code class="ruby">      price: 68.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="316">
+
+          <li class="never" data-hits="" data-linenumber="192">
+
+            
+
+            
+
+            <code class="ruby">      year: 2019,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="317">
+
+          <li class="never" data-hits="" data-linenumber="193">
+
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="318">
+
+          <li class="never" data-hits="" data-linenumber="194">
+
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="319">
+
+          <li class="never" data-hits="" data-linenumber="195">
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.535758&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="320">
+
+          <li class="never" data-hits="" data-linenumber="196">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="321">
+
+          <li class="covered" data-hits="1" data-linenumber="197">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    get &quot;/api/v1/posters?sort=asc&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="322">
+
+          <li class="never" data-hits="" data-linenumber="198">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="323">
+
+          <li class="covered" data-hits="1" data-linenumber="199">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="324">
+
+          <li class="never" data-hits="" data-linenumber="200">
+
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="325">
+
+          <li class="covered" data-hits="1" data-linenumber="201">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="326">
+
+          <li class="never" data-hits="" data-linenumber="202">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="203">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="327">
+
+          <li class="covered" data-hits="1" data-linenumber="204">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters).to have_key(:data)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="328">
+
+          <li class="covered" data-hits="1" data-linenumber="205">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="329">
+
+          <li class="covered" data-hits="1" data-linenumber="206">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:data].count).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="207">
+
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="330">
+
+          <li class="covered" data-hits="1" data-linenumber="208">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters).to have_key(:meta)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="331">
+
+          <li class="covered" data-hits="1" data-linenumber="209">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:meta]).to be_an(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="332">
+
+          <li class="covered" data-hits="1" data-linenumber="210">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:meta][:count]).to eq(3)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="333">
+
+          <li class="covered" data-hits="1" data-linenumber="211">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="334">
+
+          <li class="covered" data-hits="1" data-linenumber="212">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    data = posters[:data]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="335">
+
+          <li class="covered" data-hits="1" data-linenumber="213">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes1 = data[0][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="336">
+
+          <li class="covered" data-hits="1" data-linenumber="214">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes2 = data[1][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="337">
+
+          <li class="covered" data-hits="1" data-linenumber="215">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes3 = data[2][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="338">
+
+          <li class="never" data-hits="" data-linenumber="216">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="339">
+
+          <li class="covered" data-hits="1" data-linenumber="217">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes1[:name]).to eq(&quot;FAILURE&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="340">
+
+          <li class="covered" data-hits="1" data-linenumber="218">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes2[:name]).to eq(&quot;MEDIOCRITY&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="341">
+
+          <li class="covered" data-hits="1" data-linenumber="219">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes3[:name]).to eq(&quot;REGRET&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="342">
+
+          <li class="covered" data-hits="1" data-linenumber="220">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="343">
+
+          <li class="covered" data-hits="1" data-linenumber="221">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  it &#39;can sort by descending order&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="344">
+
+          <li class="covered" data-hits="1" data-linenumber="222">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="345">
+
+          <li class="covered" data-hits="1" data-linenumber="223">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;MEDIOCRITY&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="346">
+
+          <li class="never" data-hits="" data-linenumber="224">
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="347">
+
+          <li class="never" data-hits="" data-linenumber="225">
+
+            
+
+            
+
+            <code class="ruby">      price: 127.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="348">
+
+          <li class="never" data-hits="" data-linenumber="226">
+
+            
+
+            
+
+            <code class="ruby">      year: 2021,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="349">
+
+          <li class="never" data-hits="" data-linenumber="227">
+
+            
+
+            
+
+            <code class="ruby">      vintage: false,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="350">
+
+          <li class="never" data-hits="" data-linenumber="228">
+
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/mediocrity.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="351">
+
+          <li class="covered" data-hits="1" data-linenumber="229">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.538863&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="352">
+            
+
+            
+
+            <code class="ruby"></code>
+
+          <li class="covered" data-hits="1" data-linenumber="230">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="353">
+
+          <li class="never" data-hits="" data-linenumber="231">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="354">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="232">
+            
+
+            
+
+            <code class="ruby">      description: &quot;Dreams are just that—dreams.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="233">
+
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="355">
+
+          <li class="never" data-hits="" data-linenumber="234">
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;REGRET&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="356">
+
+          <li class="never" data-hits="" data-linenumber="235">
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Hard work rarely pays off.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="357">
+
+          <li class="never" data-hits="" data-linenumber="236">
+
+            
+
+            
+
+            <code class="ruby">      price: 89.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="358">
+
+          <li class="never" data-hits="" data-linenumber="237">
+
+            
+
+            
+
+            <code class="ruby">      year: 2018,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="359">
+
+          <li class="covered" data-hits="1" data-linenumber="238">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="360">
+
+          <li class="never" data-hits="" data-linenumber="239">
+
+            
+
+            
+
+            <code class="ruby">      img_url:  &quot;./assets/regret.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="361">
+
+          <li class="never" data-hits="" data-linenumber="240">
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.540318&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="362">
+
+          <li class="never" data-hits="" data-linenumber="241">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="363">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="242">
+
+            
+
+            
+
+            <code class="ruby">    poster = Poster.create(</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="364">
+
+          <li class="never" data-hits="" data-linenumber="243">
+
+            
+
+            
+
+            <code class="ruby">      name: &quot;FAILURE&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="365">
+
+          <li class="never" data-hits="" data-linenumber="244">
+
+            
+
+            
+
+            <code class="ruby">      description: &quot;Why bother trying? It&#39;s probably not worth it.&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="366">
+
+          <li class="never" data-hits="" data-linenumber="245">
+
+            
+
+            
+
+            <code class="ruby">      price: 68.00,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="367">
+
+          <li class="covered" data-hits="1" data-linenumber="246">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">      year: 2019,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="368">
+
+          <li class="never" data-hits="" data-linenumber="247">
+
+
+            
+
+            <code class="ruby">      vintage: true,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="369">
+
+          <li class="never" data-hits="" data-linenumber="248">
+
+            
+
+            
+
+            <code class="ruby">      img_url: &quot;./assets/failure.jpg&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="370">
+
+          <li class="never" data-hits="" data-linenumber="249">
+
+            
+
+            
+
+            <code class="ruby">      created_at: &quot;2025-04-08 19:40:19.535758&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="371">
+
+          <li class="never" data-hits="" data-linenumber="250">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="372">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="251">
+
+            
+
+            
+
+            <code class="ruby">    get &quot;/api/v1/posters?sort=desc&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="373">
+
+          <li class="never" data-hits="" data-linenumber="252">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="374">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="253">
+
+
+            
+
+            <code class="ruby">    expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="375">
+
+          <li class="never" data-hits="" data-linenumber="254">
+
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="376">
+
+          <li class="covered" data-hits="1" data-linenumber="255">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    posters = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="377">
+
+          <li class="never" data-hits="" data-linenumber="256">
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="378">
+
+          <li class="covered" data-hits="1" data-linenumber="257">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters).to have_key(:data)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="379">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="258">
+
+            
+
+            
+
+            <code class="ruby">    expect(posters[:data]).to be_an(Array)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="380">
+
+          <li class="covered" data-hits="1" data-linenumber="259">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="381">
+            
+              <span class="hits">1</span>
+
+          <li class="never" data-hits="" data-linenumber="260">
+
+            
+
+            
+
+            <code class="ruby">    expect(posters).to have_key(:meta)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="382">
+
+          <li class="covered" data-hits="1" data-linenumber="261">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:meta]).to be_an(Hash)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="383">
+
+          <li class="covered" data-hits="1" data-linenumber="262">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(posters[:meta][:count]).to eq(3)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="384">
+
+          <li class="covered" data-hits="1" data-linenumber="263">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="385">
+
+          <li class="covered" data-hits="1" data-linenumber="264">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    data = posters[:data]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="386">
+
+          <li class="covered" data-hits="1" data-linenumber="265">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes1 = data[0][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="387">
+
+          <li class="covered" data-hits="1" data-linenumber="266">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes2 = data[1][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="388">
+
+          <li class="covered" data-hits="1" data-linenumber="267">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    attributes3 = data[2][:attributes]</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="389">
+
+          <li class="covered" data-hits="1" data-linenumber="268">
+            
+              <span class="hits">1</span>
+
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="390">
+
+          <li class="covered" data-hits="1" data-linenumber="269">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes1[:name]).to eq(&quot;REGRET&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="391">
+
+          <li class="covered" data-hits="1" data-linenumber="270">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes2[:name]).to eq(&quot;MEDIOCRITY&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="covered" data-hits="1" data-linenumber="392">
+
+          <li class="covered" data-hits="1" data-linenumber="271">
+
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(attributes3[:name]).to eq(&quot;FAILURE&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+
+          <li class="never" data-hits="" data-linenumber="393">
+
           <li class="never" data-hits="" data-linenumber="272">
             
 
@@ -8455,6 +10901,7 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="374">
+
             
 
             
@@ -8464,7 +10911,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="394">
+
           <li class="never" data-hits="" data-linenumber="375">
+
             
 
             
@@ -8474,7 +10925,11 @@
         </div>
       
         <div>
+
+          <li class="never" data-hits="" data-linenumber="395">
+
           <li class="never" data-hits="" data-linenumber="376">
+
             
 
             

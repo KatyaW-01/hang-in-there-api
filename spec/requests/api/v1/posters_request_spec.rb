@@ -113,7 +113,26 @@ describe "Posters API", type: :request do
     expect(created_poster.vintage).to eq(poster_params[:vintage])
     expect(created_poster.img_url).to eq(poster_params[:img_url])
   end
+  it 'can update a poster' do
+    posterId = Poster.create( 
+    name: "FAILURE",
+    description: "Why bother trying? It's probably not worth it.",
+    price: 68.0,
+    year: 2019,
+    vintage: true,
+    img_url: "./assets/failure.jpg").id
 
+    previous_name = Poster.last.name
+    poster_params = {name: "CRY"}
+    headers = {"CONTENT_TYPE" => "application/json"}
+
+    patch "/api/v1/posters/#{posterId}", headers: headers, params: JSON.generate({poster: poster_params})
+
+    poster = Poster.find_by(id: posterId)
+    expect(response).to be_successful
+    expect(poster.name).to_not eq(previous_name)
+    expect(poster.name).to eq("CRY")
+  end
   it 'can destroy a poster' do
     poster = Poster.create(name: "HOPELESSNESS",
     description: "Stay in your comfort zone; it's safer.",
