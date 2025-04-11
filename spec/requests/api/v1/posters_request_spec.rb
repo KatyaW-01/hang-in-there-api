@@ -113,6 +113,7 @@ describe "Posters API", type: :request do
     expect(created_poster.vintage).to eq(poster_params[:vintage])
     expect(created_poster.img_url).to eq(poster_params[:img_url])
   end
+
   it 'can update a poster' do
     posterId = Poster.create( 
     name: "FAILURE",
@@ -133,6 +134,7 @@ describe "Posters API", type: :request do
     expect(poster.name).to_not eq(previous_name)
     expect(poster.name).to eq("CRY")
   end
+
   it 'can destroy a poster' do
     poster = Poster.create(name: "HOPELESSNESS",
     description: "Stay in your comfort zone; it's safer.",
@@ -218,8 +220,6 @@ describe "Posters API", type: :request do
     expect(response).to be_successful
   
     posters = JSON.parse(response.body, symbolize_names: true)
-
-
     expect(posters).to have_key(:data)
     expect(posters[:data]).to be_an(Array)
     expect(posters[:data].count).to eq(2)
@@ -240,9 +240,6 @@ describe "Posters API", type: :request do
     expect(attributes2[:year]).to eq(2021)
     expect(attributes2[:vintage]).to eq(false)
     expect(attributes2[:img_url]).to eq("./assets/mediocrity.jpg")
-
-
-
   end
 
   it "filteres according to max_price" do
@@ -289,6 +286,7 @@ describe "Posters API", type: :request do
     expect(attributes[:vintage]).to eq(true)
     expect(attributes[:img_url]).to eq("./assets/failure.jpg")
   end
+
   it 'can sort by ascending order' do
     poster = Poster.create(
       name: "MEDIOCRITY",
@@ -298,7 +296,6 @@ describe "Posters API", type: :request do
       vintage: false,
       img_url: "./assets/mediocrity.jpg",
       created_at: "2025-04-08 19:40:19.538863")
-
 
     poster = Poster.create(
       name: "REGRET",
@@ -340,6 +337,7 @@ describe "Posters API", type: :request do
     expect(attributes2[:name]).to eq("MEDIOCRITY")
     expect(attributes3[:name]).to eq("REGRET")
   end
+  
   it 'can sort by descending order' do
     poster = Poster.create(
       name: "MEDIOCRITY",
@@ -349,7 +347,6 @@ describe "Posters API", type: :request do
       vintage: false,
       img_url: "./assets/mediocrity.jpg",
       created_at: "2025-04-08 19:40:19.538863")
-
 
     poster = Poster.create(
       name: "REGRET",
