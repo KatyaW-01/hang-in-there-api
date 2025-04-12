@@ -19,7 +19,6 @@ class PosterSerializer
         count: data.count
       }
    }
-
   end
 
   def self.format_poster(poster)
