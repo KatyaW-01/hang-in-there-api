@@ -1,4 +1,12 @@
 class Poster < ApplicationRecord
+  
+  validate :name, :description, :vintage, presence: true
+  validates_uniqueness_of :name
+  validates :year, numericality: { only_integer: true }
+  validates :price, numericality: { only_float: true }
+# Onluy-float might not even be real but only_integer was the only thing close, so it's allowed probationarily
+
+
   def self.sorting(direction)
       order(created_at: direction)
   end
