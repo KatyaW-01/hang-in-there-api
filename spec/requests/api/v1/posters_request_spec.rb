@@ -297,7 +297,6 @@ describe "Posters API", type: :request do
       img_url: "./assets/mediocrity.jpg",
       created_at: "2025-04-08 19:40:19.538863")
 
-
     poster = Poster.create(
       name: "REGRET",
       description: "Hard work rarely pays off.",
